@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<IsPackable>true</IsPackable>
+		<Version>1.5.0</Version>
+		<AssemblyVersion>1.5.0.0</AssemblyVersion>
+		<FileVersion>1.5.0.0</FileVersion>
+		<AnalysisLevel>none</AnalysisLevel>
+		<Copyright>All rights of this tool belong to Mohammadreza Gholamizadeh and any copying is prohibited And The use of this tool is free for developers and companies.</Copyright>
+		<Description>
+This Tools Is For Automatic Registering Services and classes for TDD , Unit Testing , Integration Tests and Developmentaion .
+You Can Register Your Own Service And Class With  Auto Injecting Dpendencies and Create An Instance Of Your Specific Class And Services.
+		</Description>
+		<NeutralLanguage>en</NeutralLanguage>
+		<Authors>MohammadReza Gholamizadeh [Phoenix]</Authors>
+		<Owners>MohammadReza Gholamizadeh</Owners>
+		<TargetFrameworks>net6.0</TargetFrameworks>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
+		<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Autofac" Version="6.3.0" />
+		<PackageReference Include="Microsoft.Data.Sqlite.Core" Version="6.0.7" />
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="6.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.4" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.4" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.4" />
+		<PackageReference Include="Moq" Version="4.18.1" />
+		<PackageReference Include="xunit.extensibility.core" Version="2.4.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="dataBaseSettings.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+		</EmbeddedResource>
+	</ItemGroup>
+
+
+
+</Project>
